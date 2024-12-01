@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bq02l6xxq4cm1"]
+
+[node name="FileDialog" type="FileDialog"]
+title = "Open a File"
+ok_button_text = "Open"
+file_mode = 0
