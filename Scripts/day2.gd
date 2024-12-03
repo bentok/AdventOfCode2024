@@ -15,7 +15,7 @@ func is_report_safe(report: Array) -> bool:
 	var direction = []
 	for i in range(report.size() - 1):
 		direction.append(report[i] - report[i + 1])
-	
+
 	var direction_set = {}
 	for value in direction:
 		direction_set[value] = true

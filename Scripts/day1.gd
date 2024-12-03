@@ -3,7 +3,7 @@ extends Node
 func parse_list(input: String) -> Dictionary:
 	var lines = Utils.get_lines(input)
 	var pairs = []
-	
+
 	for line in lines:
 		var split_line = Utils.split(line, "   ")
 		var int_pair = []
@@ -20,10 +20,10 @@ func parse_list(input: String) -> Dictionary:
 func part1(parsed: Dictionary) -> int:
 	var list1 = parsed["list1"].duplicate()
 	var list2 = parsed["list2"].duplicate()
-	
+
 	list1.sort()
 	list2.sort()
-	
+
 	var total = 0
 	for i in range(list1.size()):
 		total += abs(list1[i] - list2[i])
@@ -37,7 +37,7 @@ func count_appearances(array: Array) -> Dictionary:
 
 func part2(parsed: Dictionary) -> int:
 	var appearances = count_appearances(parsed["list2"])
-	
+
 	var total = 0
 	for x in parsed["list1"]:
 		total += x * appearances.get(x, 0)

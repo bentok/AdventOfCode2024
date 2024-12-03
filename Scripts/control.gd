@@ -35,7 +35,7 @@ func process_input(content: String):
 			$Label.text = "Day %d logic is incomplete!" % current_day
 	else:
 		$Label.text = "No logic found for Day %d!" % current_day
- 
+
 func setup_day_buttons():
 	var container = $DayButtonContainer
 	for day in range(1, 26):

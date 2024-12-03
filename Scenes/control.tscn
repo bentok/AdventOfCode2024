@@ -30,10 +30,10 @@ offset_bottom = 77.0
 
 [node name="DayButtonContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 118.0
-offset_top = 13.0
-offset_right = 158.0
-offset_bottom = 53.0
+offset_left = 343.0
+offset_top = 4.0
+offset_right = 383.0
+offset_bottom = 44.0
 
 [connection signal="pressed" from="OpenFileButton" to="." method="_on_open_file_button_pressed"]
 [connection signal="file_selected" from="FileDialog" to="." method="_on_file_dialog_file_selected"]
